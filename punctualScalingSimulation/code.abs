@@ -1432,7 +1432,7 @@ interface NSFWDetectorInterface   {
 class NSFWDetector() implements NSFWDetectorInterface {
   Int yesOrNot = -1;
   Int speed_res = 30;
-  Int mcl = 90;
+  Int mcl = 91;
 
   Maybe<Bool> nsfwDetection(String image, NSFWDetector_LoadBalancerInterface balancer, Int id){
     //analyze the image to understand if it is safe for work or not
@@ -1561,7 +1561,7 @@ interface ImageRecognizerInterface   {
 class ImageRecognizer() implements ImageRecognizerInterface {
   Int category = -1;
   Int speed_res = 30;
-  Int mcl = 90;
+  Int mcl = 91;
 
   String recognizeImage(String image, ImageRecognizer_LoadBalancerInterface balancer, Int id){
     //recognize the image
